@@ -3,7 +3,6 @@ package mn.client.body.nullbody.bug;
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.runtime.server.EmbeddedServer;
-import mn.client.body.nullbody.bug.test.DataCode;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -33,9 +32,9 @@ public class TestControllerTest {
     }
 
     @Test
-    public void list() throws Exception {
+    public void testMethod() throws Exception {
         TestClient client = server.getApplicationContext().getBean(TestClient.class);
-        DataCode code = client.testMethod();
+        String code = client.testMethod("SOME_TEST_STRING");
         assertNotNull(code);
     }
 }

@@ -1,7 +1,0 @@
-micronaut:
-    application:
-        name: mn-client-body-null-bug
-                
-#Uncomment to set server port
-#    server:
-#        port: 8080

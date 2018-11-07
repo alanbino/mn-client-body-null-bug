@@ -4,6 +4,6 @@ import io.micronaut.http.annotation.Get;
 
 public interface TestAPI {
 
-    @Get("/testMethod")
-    public DataCode testMethod();
+    @Get("/testMethod/{testString}")
+    public String testMethod(String testString);
 }

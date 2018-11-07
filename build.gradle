@@ -20,6 +20,9 @@ apply plugin:"java"
 apply plugin:"net.ltgt.apt-eclipse"
 apply plugin:"net.ltgt.apt-idea"
 
+compileJava {
+    options.compilerArgs << '-parameters'
+}
 
 repositories {
     mavenLocal()
