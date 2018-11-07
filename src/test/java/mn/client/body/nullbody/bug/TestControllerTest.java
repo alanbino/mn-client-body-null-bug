@@ -35,7 +35,7 @@ public class TestControllerTest {
     @Test
     public void list() throws Exception {
         TestClient client = server.getApplicationContext().getBean(TestClient.class);
-        DataCode code = client.getList();
+        DataCode code = client.testMethod();
         assertNotNull(code);
     }
 }
