@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: mn.client.body.nullbody.bug
+---
+testFramework: junit
+sourceLanguage: java
